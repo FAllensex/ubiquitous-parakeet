@@ -190,6 +190,10 @@ body {
     margin-top: calc(var(--padding) * -1);
     padding: var(--padding);
 }
+.hero__headline a{
+    text-decoration: none;
+    color: #ffffff;
+}
 .hero__headline::after {
     content: "";
     position: absolute;
@@ -225,7 +229,9 @@ body {
  * Images
  *
  */
-
+footer{
+    background-color: #111;
+}
 .snip1566 {
   position: relative;
   display: inline-block;
@@ -345,11 +351,158 @@ figcaption{
     height: 1px;
     background: white;
     position: absolute;
-    left: 20%;
+    left: 10%;
 }
 /**
  *
  * Images End
  *
  */
+
+
+/*=============================================
+=            FAQ            =
+=============================================*/
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+
+ .faq-container {
+	 margin: 0 auto;
+	 padding: 4rem;
+	 width: 48rem;
+     color: var(--header-snow);
+}
+ .accordion .accordion-item {
+	 border-bottom: 1px solid #e5e5e5;
+}
+ .accordion .accordion-item button[aria-expanded='true'] {
+	 border-bottom: 1px solid #b6b6b6;
+}
+ .accordion button {
+	 position: relative;
+	 display: block;
+	 text-align: left;
+	 width: 100%;
+	 padding: 1em 0;
+	 color: #fff;
+	 font-size: 1.15rem;
+	 font-weight: 600;
+     font-family: var(--pinkfloydfont);
+	 border: none;
+	 background: none;
+	 outline: none;
+}
+ .accordion button:hover, .accordion button:focus {
+	 cursor: pointer;
+	 color: #ffffff;
+}
+ .accordion button:hover::after, .accordion button:focus::after {
+	 cursor: pointer;
+	 color: #d3d3d3;
+	 border: 1px solid #cccccc;
+}
+ .accordion button .accordion-title {
+	 padding: 1em 1.5em 1em 0;
+}
+ .accordion button .icon {
+	 display: inline-block;
+	 position: absolute;
+	 top: 18px;
+	 right: 0;
+	 width: 22px;
+	 height: 22px;
+	 border: 1px solid;
+	 border-radius: 22px;
+}
+ .accordion button .icon::before {
+	 display: block;
+	 position: absolute;
+	 content: '';
+	 top: 9px;
+	 left: 5px;
+	 width: 10px;
+	 height: 2px;
+	 background: currentColor;
+}
+ .accordion button .icon::after {
+	 display: block;
+	 position: absolute;
+	 content: '';
+	 top: 5px;
+	 left: 9px;
+	 width: 2px;
+	 height: 10px;
+	 background: currentColor;
+}
+ .accordion button[aria-expanded='true'] {
+	 color: #c9c9c9;
+}
+ .accordion button[aria-expanded='true'] .icon::after {
+	 width: 0;
+}
+ .accordion button[aria-expanded='true'] + .accordion-content {
+	 opacity: 1;
+	 max-height: 9em;
+	 transition: all 200ms linear;
+	 will-change: opacity, max-height;
+}
+ .accordion .accordion-content {
+	 opacity: 0;
+	 max-height: 0;
+	 overflow: hidden;
+	 transition: opacity 200ms linear, max-height 200ms linear;
+	 will-change: opacity, max-height;
+     color: #fff;
+     font-family: var(--pinkfloydfont);
+     font-weight: 600;
+     
+}
+ .accordion .accordion-content p {
+	 font-size: 1rem;
+	 font-weight: 300;
+	 margin: 2em 0;
+}
+
+#faqtxt{
+font-family: var(--pinkfloydfont);
+font-weight: 600;
+font-size: 1cm;
+}
+
+/*=====  End of FAQ  ======*/
+
+
+/*=============================================
+=            Call to Action            =
+=============================================*/
+
+.callto{
+    height: 7cm;
+    width: 100%;
+    background-color: #111;
+}
+.callto button{
+    position: absolute;
+    height: 49px;
+    width: 160px;
+    font-size: 18px;
+    background: #ffffff;
+    font-family: var(--pinkfloydfont);
+    font-weight: 600;
+    line-height: 36px;
+    left: 44%;
+    margin-top: 40px;
+}
+.callto h2{
+    padding-top: 30px;
+    text-align: center;
+    font-family: var(--pinkfloydfont);
+    font-weight: 600;
+    font-size: 1.3cm;
+    color: #fff;
+}
+.callto a{
+    text-decoration: none;
+    color: black;
+}
+/*=====  End of Call to Action  ======*/
 

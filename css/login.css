@@ -92,7 +92,8 @@ body {
 .logo a{
     text-decoration: none;
     color: var(--header-snow);
-    font-family: 'Cinzel', serif;
+    font-family: var(--pinkfloydfont);
+    font-weight: 600;
 }
 @media screen and (max-width: 500px) {
     .logo  {
